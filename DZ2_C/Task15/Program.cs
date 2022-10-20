@@ -1,2 +1,23 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Задача 15: Напишите программу, которая принимает на вход цифру,
+// обозначающую день недели, и проверяет, является ли этот день выходным.
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+
+Console.Write("Введите число: ");
+int number = int.Parse(Console.ReadLine()!);
+if (number >= 7)
+{
+    Console.Write("Число не соответствует дню недели");
+}
+else
+{
+    if (number > 5)
+    {
+        Console.Write("нет - выходной день");
+    }
+    if (number <= 5)
+    {
+        Console.Write("да - рабочий день");
+    }
+}
