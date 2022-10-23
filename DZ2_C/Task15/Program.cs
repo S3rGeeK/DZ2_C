@@ -6,7 +6,7 @@
 
 Console.Write("Введите число: ");
 int number = int.Parse(Console.ReadLine()!);
-if (number >= 7)
+if (number > 8)
 {
     Console.Write("Число не соответствует дню недели");
 }
@@ -14,10 +14,10 @@ else
 {
     if (number > 5)
     {
-        Console.Write("нет - выходной день");
+        Console.Write("да - выходной день");
     }
     if (number <= 5)
     {
-        Console.Write("да - рабочий день");
+        Console.Write("нет - рабочий день");
     }
 }
